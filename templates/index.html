@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Sección superior -->
+    
+    <main>
+        <section class="width-max relative h-screen flex justify-arround">
+            <img class="h-full" style="width: 100%;" src="{% static 'img/banner.png' %}" alt="">
+            <button class="absolute text-lg p-4 bg-blue-400 rounded-md font-bold my-4 text-white" style="bottom:16%;left:7%;">Iniciar sesión</button>
+        </section>
+
+        <section class="ml-4 my-12">
+            <h2 class="text-2xl font-bold text-blue-800">Sección 2: Informes y estadísticas</h2>
+            <div class="grafico">
+                <!-- Señalización de gráficos -->
+            </div>
+        </section>
+
+        <section class="ml-4 my-12">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Sección 3: Configuración</h2>
+            <ul>
+                <li><a class="mb-4" href="#">Configuración del dashboard</a></li>
+                <li><a class="mb-4" href="#">Configuración de seguridad</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Sección inferior -->
+
+
+{% endblock %}
